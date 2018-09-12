@@ -7,7 +7,7 @@ outputFileName = 'testCsvFileOut.csv'
 
 with open(inputFileName) as csvFileInput, open(outputFileName, 'w') as csvFileOutput:
      csvDataInput   = csv.reader(csvFileInput, delimiter = ';', quotechar="'")
-     csvWriter = csv.writer(csvFileOutput, delimiter=';', quotechar="'", lineterminator = '\n')
+     csvWriter      = csv.writer(csvFileOutput, delimiter=';', quotechar="'", lineterminator = '\n')
      
      #iteration = 1
      for row in csvDataInput:
